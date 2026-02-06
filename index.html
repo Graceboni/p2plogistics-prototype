@@ -1,49 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>P2P Logistics | UK & USA to Ghana Shipping</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#0D8FDA',
-              secondary: '#3FADEC',
-              navy: '#083E63',
-              lightBg: '#CFEAFB',
-              nearWhite: '#EAF6FD',
-            },
-            fontFamily: {
-              montserrat: ['Montserrat', 'sans-serif'],
-            },
-            animation: {
-              'bounce-slow': 'bounce 3s linear infinite',
-            }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P2P Logistics | UK & USA to Ghana Shipping</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0D8FDA',
+            secondary: '#3FADEC',
+            navy: '#083E63',
+            lightBg: '#CFEAFB',
+            nearWhite: '#EAF6FD',
+          },
+          fontFamily: {
+            montserrat: ['Montserrat', 'sans-serif'],
+          },
+          animation: {
+            'bounce-slow': 'bounce 3s linear infinite',
           }
         }
       }
-    </script>
-    <style>
-      body {
-        font-family: 'Montserrat', sans-serif;
-        scroll-behavior: smooth;
-      }
-      .gradient-hero {
-        background: linear-gradient(135deg, #0D8FDA 0%, #3FADEC 100%);
-      }
-      .glass-card {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-      }
-    </style>
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+
+    .bg-nearWhite {
+      --tw-bg-opacity: 1;
+      background-color: rgb(234 246 253 / var(--tw-bg-opacity, 1));
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
   <script type="importmap">
 {
   "imports": {
@@ -55,10 +59,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-nearWhite text-slate-800">
-    <div id="root"></div>
+
+<body class="bg-nearWhite text-slate-800">
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
