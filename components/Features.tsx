@@ -32,7 +32,7 @@ const Features: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-primary font-bold text-sm uppercase tracking-[0.2em] mb-4">Our Service Reach</h2>
           <p className="text-4xl md:text-5xl font-extrabold text-navy mb-6">Why Trust P2P Logistics?</p>
-          <p className="text-lg text-slate-500 font-medium">We provide a reliable bridge between the world's biggest markets and consumers in Ghana.</p>
+          <p className="text-lg text-slate-500 font-medium">We provide a reliable bridge between the world&apos;s biggest markets and consumers in Ghana.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

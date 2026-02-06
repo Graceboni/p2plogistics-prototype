@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageSquare, Send, X, Bot, User, Sparkles, Calculator } from 'lucide-react';
+import { MessageSquare, Send, X, Bot, User, Sparkles } from 'lucide-react';
 import { GoogleGenAI } from '@google/genai';
 import { TARIFFS_UK, TARIFFS_USA } from '../constants';
 
@@ -33,7 +33,7 @@ const AIShippingAssistant: React.FC = () => {
       const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
       const ukContext = TARIFFS_UK.map(t => `${t.weight}: £${t.price}`).join(', ');
       const usaContext = TARIFFS_USA.map(t => `${t.weight}: $${t.price}`).join(', ');
-      
+
       const response = await ai.models.generateContent({
         model: 'gemini-3-flash-preview',
         contents: userMessage,
@@ -66,7 +66,7 @@ const AIShippingAssistant: React.FC = () => {
     <div className="fixed bottom-6 right-6 z-[60]">
       {/* Launcher Button */}
       {!isOpen && (
-        <button 
+        <button
           onClick={() => setIsOpen(true)}
           className="bg-primary hover:bg-secondary text-white w-16 h-16 rounded-full shadow-2xl shadow-primary/40 flex items-center justify-center transition-all hover:scale-110 active:scale-95 group"
         >
@@ -135,15 +135,15 @@ const AIShippingAssistant: React.FC = () => {
           {/* Input */}
           <div className="p-4 bg-white border-t border-slate-100 shrink-0">
             <div className="flex items-center space-x-2 bg-nearWhite rounded-2xl p-2 focus-within:ring-2 ring-primary/20 transition-all">
-              <input 
-                type="text" 
+              <input
+                type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleSend()}
                 placeholder="UK or USA shipping help..."
                 className="flex-grow bg-transparent border-none outline-none px-3 py-2 text-sm font-bold text-navy"
               />
-              <button 
+              <button
                 onClick={handleSend}
                 disabled={isTyping || !input.trim()}
                 className="bg-primary text-white p-2.5 rounded-xl hover:bg-secondary transition-colors disabled:opacity-50"

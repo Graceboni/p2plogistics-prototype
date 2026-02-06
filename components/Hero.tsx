@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Plane, ShoppingBag, Globe } from 'lucide-react';
+import { ArrowRight, Plane, ShoppingBag } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -17,12 +17,12 @@ const Hero: React.FC = () => {
             <div className="inline-flex items-center space-x-2 bg-navy/10 backdrop-blur-sm px-4 py-1.5 rounded-full border border-navy/20">
               <span className="text-xs font-bold uppercase tracking-widest text-navy">UK & USA • Safe • Reliable</span>
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.1] text-navy">
               UK & USA <br />
               <span className="text-navy/60">to Ghana Shipping</span>
             </h1>
-            
+
             <p className="text-lg md:text-xl text-navy/80 max-w-lg font-medium leading-relaxed">
               The premier air freight link between the UK, USA, and Ghana. You do the shopping across two continents, we handle the shipping to your doorstep.
             </p>
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
                 View Tariffs
               </a>
             </div>
-            
+
             <div className="flex items-center space-x-6 pt-4 text-navy/60">
               <div className="flex items-center space-x-2">
                 <ShoppingBag size={20} />
@@ -51,17 +51,17 @@ const Hero: React.FC = () => {
 
           <div className="hidden lg:block relative animate-in fade-in slide-in-from-right-8 duration-700">
             <div className="relative z-10 animate-bounce-slow">
-               <div className="bg-white/10 backdrop-blur-md p-6 rounded-[3rem] border border-white/20 shadow-2xl">
-                 <img 
-                    src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1000&auto=format&fit=crop" 
-                    alt="International Logistics" 
-                    className="rounded-[2.5rem] shadow-2xl object-cover h-[450px] w-full"
-                 />
-                 <div className="absolute -bottom-6 -right-6 bg-white p-8 rounded-3xl shadow-2xl space-y-2 max-w-[220px] border border-slate-50">
-                   <p className="text-navy font-extrabold text-2xl leading-none">Global Reach</p>
-                   <p className="text-primary text-xs font-bold uppercase tracking-tight">Active UK & USA Hubs</p>
-                 </div>
-               </div>
+              <div className="bg-white/10 backdrop-blur-md p-6 rounded-[3rem] border border-white/20 shadow-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1000&auto=format&fit=crop"
+                  alt="International Logistics"
+                  className="rounded-[2.5rem] shadow-2xl object-cover h-[450px] w-full"
+                />
+                <div className="absolute -bottom-6 -right-6 bg-white p-8 rounded-3xl shadow-2xl space-y-2 max-w-[220px] border border-slate-50">
+                  <p className="text-navy font-extrabold text-2xl leading-none">Global Reach</p>
+                  <p className="text-primary text-xs font-bold uppercase tracking-tight">Active UK & USA Hubs</p>
+                </div>
+              </div>
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] bg-white/10 rounded-full blur-3xl -z-10"></div>
           </div>

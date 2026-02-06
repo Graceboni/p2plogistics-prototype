@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Instagram, Send, Mail, MapPin } from 'lucide-react';
+import { Phone, Instagram, Send, MapPin } from 'lucide-react';
 import { CONTACT_INFO } from '../constants';
 
 const ContactSection: React.FC = () => {
@@ -11,7 +11,7 @@ const ContactSection: React.FC = () => {
           <div className="lg:w-1/2 p-12 lg:p-20 bg-navy text-white">
             <h2 className="text-4xl md:text-5xl font-extrabold mb-8">Get in touch with us</h2>
             <p className="text-white/70 text-lg font-medium mb-12 max-w-md">
-              Have questions about our drop dates or special shipping requirements? We're here to help.
+              Have questions about our drop dates or special shipping requirements? We&apos;re here to help.
             </p>
 
             <div className="space-y-8">
@@ -53,16 +53,16 @@ const ContactSection: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-extrabold text-navy/60 uppercase tracking-wider">Full Name</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     className="w-full px-6 py-4 rounded-2xl bg-lightBg/30 border-2 border-transparent focus:border-primary focus:bg-white outline-none transition-all font-bold text-navy"
                     placeholder="John Doe"
                   />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-extrabold text-navy/60 uppercase tracking-wider">Email Address</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     className="w-full px-6 py-4 rounded-2xl bg-lightBg/30 border-2 border-transparent focus:border-primary focus:bg-white outline-none transition-all font-bold text-navy"
                     placeholder="john@example.com"
                   />
@@ -70,15 +70,15 @@ const ContactSection: React.FC = () => {
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-extrabold text-navy/60 uppercase tracking-wider">Package Details (Optional)</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className="w-full px-6 py-4 rounded-2xl bg-lightBg/30 border-2 border-transparent focus:border-primary focus:bg-white outline-none transition-all font-bold text-navy"
                   placeholder="Weight, dimensions, contents..."
                 />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-extrabold text-navy/60 uppercase tracking-wider">Your Message</label>
-                <textarea 
+                <textarea
                   rows={4}
                   className="w-full px-6 py-4 rounded-2xl bg-lightBg/30 border-2 border-transparent focus:border-primary focus:bg-white outline-none transition-all font-bold text-navy resize-none"
                   placeholder="How can we help you today?"

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Plane, ShoppingBag, Package, MapPin, Phone, Instagram, Clock, ShieldCheck, Truck } from 'lucide-react';
+import { Package, MapPin, Clock, Truck } from 'lucide-react';
 import { TariffItem, Step, NavLink } from './types';
 
 export const NAV_LINKS: NavLink[] = [

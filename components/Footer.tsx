@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="bg-white/5 p-4 rounded-2xl">
                 <p className="text-xs font-bold text-white/40 uppercase mb-2 tracking-widest">Our Motto</p>
-                <p className="text-sm font-extrabold italic">"You do the shopping, We do the shipping."</p>
+                <p className="text-sm font-extrabold italic">&quot;You do the shopping, We do the shipping.&quot;</p>
               </li>
             </ul>
           </div>

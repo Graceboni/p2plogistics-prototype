@@ -4,7 +4,6 @@ import Features from './Features';
 import TariffSection from './TariffSection';
 import HowItWorks from './HowItWorks';
 import ContactSection from './ContactSection';
-import { Globe, ShieldCheck, Zap, Lock, Package, Truck, Clock, MapPin } from 'lucide-react';
 
 const PageHeader: React.FC<{ title: string; subtitle: string }> = ({ title, subtitle }) => (
   <div className="bg-navy pt-40 pb-24 text-center relative overflow-hidden">
@@ -18,9 +17,9 @@ const PageHeader: React.FC<{ title: string; subtitle: string }> = ({ title, subt
 
 export const ServicesPage: React.FC = () => (
   <div className="animate-in fade-in duration-500">
-    <PageHeader 
-      title="Our Logistics Services" 
-      subtitle="Comprehensive air freight and consolidation solutions from the UK and USA directly to Ghana." 
+    <PageHeader
+      title="Our Logistics Services"
+      subtitle="Comprehensive air freight and consolidation solutions from the UK and USA directly to Ghana."
     />
     <Features />
     <section className="py-24 bg-nearWhite">
@@ -57,9 +56,9 @@ export const ServicesPage: React.FC = () => (
 
 export const TariffsPage: React.FC = () => (
   <div className="animate-in fade-in duration-500">
-    <PageHeader 
-      title="Shipping Tariffs" 
-      subtitle="Transparent, flat-rate pricing based on weight classes. No hidden clearing fees, no surprises." 
+    <PageHeader
+      title="Shipping Tariffs"
+      subtitle="Transparent, flat-rate pricing based on weight classes. No hidden clearing fees, no surprises."
     />
     <TariffSection />
     <section className="py-20 bg-lightBg/20 border-t border-slate-100">
@@ -76,9 +75,9 @@ export const TariffsPage: React.FC = () => (
 
 export const HowItWorksPage: React.FC = () => (
   <div className="animate-in fade-in duration-500">
-    <PageHeader 
-      title="How It Works" 
-      subtitle="A simple, four-step journey from your online shopping cart to your hands in Accra." 
+    <PageHeader
+      title="How It Works"
+      subtitle="A simple, four-step journey from your online shopping cart to your hands in Accra."
     />
     <HowItWorks />
     <section className="py-24 bg-white">
@@ -107,9 +106,9 @@ export const HowItWorksPage: React.FC = () => (
 
 export const ContactPage: React.FC = () => (
   <div className="animate-in fade-in duration-500">
-    <PageHeader 
-      title="Contact Us" 
-      subtitle="Got questions? Our support team is ready to help you with your UK and USA shipping needs." 
+    <PageHeader
+      title="Contact Us"
+      subtitle="Got questions? Our support team is ready to help you with your UK and USA shipping needs."
     />
     <ContactSection />
   </div>
