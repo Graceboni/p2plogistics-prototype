@@ -21,3 +21,15 @@ The CI pipeline runs on every push and pull request to the `main` and `playgroun
 - `npm run lint`: Run ESLint.
 - `npm run type-check`: Run TypeScript type check.
 - `npm run build`: Run the production build.
+
+## Deploy on Vercel
+
+1. Push this repo to GitHub and import it in [Vercel](https://vercel.com) (New Project → Import Git Repository).
+2. Vercel will detect the Vite app and use the settings in `vercel.json`. No extra build settings are required.
+3. **Environment variable**: The AI Shipping Assistant needs a Gemini API key. In the Vercel project go to **Settings → Environment Variables**, add:
+   - **Name**: `GEMINI_API_KEY`
+   - **Value**: your [Google AI Studio API key](https://aistudio.google.com/apikey)
+   - Apply to Production (and Preview if you want).
+4. Redeploy after adding the variable so the build picks it up.
+
+For local development, copy `.env.example` to `.env` and set `GEMINI_API_KEY` there.
